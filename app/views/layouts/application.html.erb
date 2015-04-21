@@ -28,6 +28,9 @@
 </header>
 <body class='<%= controller.controller_name %>'>
 <div class="container">
+  <div id="cart">
+     <%= render @cart %>
+     </div>
   <%= yield %>
   <%= render 'layouts/footer' %>
 </div>
