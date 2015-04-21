@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :carts
+
+  get 'store/index'
+
   get 'pages/home'
 
   get 'pages/about'
@@ -17,7 +21,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'products#index'
+   root 'store#index', as: 'store'
   get 'help' => 'pages#help'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
