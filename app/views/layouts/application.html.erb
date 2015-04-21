@@ -11,7 +11,6 @@
   </script>
   <![endif]-->
 </head>
-<body>
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <% flash.each do |message_type, message| %>
@@ -27,6 +26,7 @@
     </nav>
   </div>
 </header>
+<body class='<%= controller.controller_name %>'>
 <div class="container">
   <%= yield %>
   <%= render 'layouts/footer' %>
