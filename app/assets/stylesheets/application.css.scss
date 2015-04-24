@@ -14,11 +14,41 @@
  *= require_self
 
  */
+.depot_form {
+  fieldset {
+    background: #efe;
+    legend {
+      color: #dfd;
+      background: #3e4eff;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+  }
+  form {
+    label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+    .submit {
+      margin-left: 4em;
+    }
+    br {
+      display: none
+    }
+  }
+}
 #side {
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141;
+    background: #6b6bff;
  form, div {
      display: inline;
      }
